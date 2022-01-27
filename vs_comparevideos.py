@@ -3,7 +3,7 @@ core = vs.core
 
 def compareVideos(clip_1, clip_2, show: bool = True):
 	
-	# Vaporsynth already checks if the input video format does not match
+	# If is False return clip 1
 	if show == False:
 		return clip_1
 
