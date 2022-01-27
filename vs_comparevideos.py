@@ -7,6 +7,13 @@ def compareVideos(clip_1, clip_2, show: bool = True):
 	if show == False:
 		return clip_1
 	
+	# Parameters are not None but check type vs.VideoNode
+	if not isinstance(clip_1, vs.VideoNode):
+		raise ValueError("The parameter 'clip_1' is not a clip")
+	if not isinstance(clip_2, vs.VideoNode):
+		raise ValueError("The parameter 'clip_2' is not a clip")
+	
+	# If both parameters are clips
 	try:
 		clip_1 = core.sub.Subtitle(clip_1, "Clip 1")
 		clip_2 = core.sub.Subtitle(clip_2, "Clip 2")
