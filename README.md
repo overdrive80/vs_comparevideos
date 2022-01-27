@@ -1,9 +1,10 @@
-# Function comparevideos(clip1: vs.VideoNode=None, clip2: vs.VideoNode=None, show: bool = True)
-Simple function for interleaving two videos
+# Do 
+
+  Simple function for interleaving two videos
 
 # Use
 
-  compareVideos(video1, video2)
+  comparevideos(clip1: vs.VideoNode=None, clip2: vs.VideoNode=None, show: bool = True)
 
 # Return value
 
