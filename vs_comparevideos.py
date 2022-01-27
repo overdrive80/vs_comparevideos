@@ -3,9 +3,9 @@ core = vs.core
 
 def compareVideos(clip_1, clip_2, show: bool = True):
 	
-	# If is False return clip 1
+	# If is False return clip 2
 	if show == False:
-		return clip_1
+		return clip_2
 
 	# Parameters are not None but check type vs.VideoNode
 	if not isinstance(clip_1, vs.VideoNode):
