@@ -7,7 +7,9 @@
   Clip1 and Clips2 must have same format (framerate, framecount, dimensions). 
 
   ``` python
-  comparevideos(clip1, clip2)
+  import vscomparevideos as compare
+  
+  compare.comparevideos(clip1, clip2)
   ```
   
 # Definition
