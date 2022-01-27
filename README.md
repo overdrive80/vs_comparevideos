@@ -34,10 +34,6 @@
 
   vs.VideoNode (object)
   
-  Return VideoNode.set_output()
-  
-  Therefore, there is no need to add a call to clip.set_output() after calling the function  
-  
 # Custom messages handler. 
 
 They are not needed because the core of vapoursynth reports errors at runtime. I leave it as documentation
