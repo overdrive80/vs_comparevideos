@@ -1,7 +1,7 @@
 import vapoursynth as vs
 core = vs.core
 
-def compareVideos(clip_1, clip_2, show: bool = True):
+def comparevideos(clip_1, clip_2, show: bool = True):
 	
 	# If is False return clip 2
 	if show == False:
