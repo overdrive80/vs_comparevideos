@@ -17,13 +17,9 @@
   For default, bool parameter is True. Header definition:
   
   ``` python
-  comparevideos(clip1, clip2, show: bool = True)
+  comparevideos(clip1: VideoNode, clip2: VideoNode, show: bool = True)
   ```
-  
-  Within the function it is controlled if the parameters that refer to clips really are. The header could have been defined in this other way:
-  ``` python
-  comparevideos(clip1: vs.VideoNode, clip2: vs.VideoNode, show: bool = True)
-  ```
+
 # Parameters
 
   * clip1: expect object type VideoNode
