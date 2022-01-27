@@ -9,7 +9,9 @@ Simple function for interleaving two videos
 
   vs.VideoNode object
   
-# Custom messages handler. They are not needed because the core of vapoursynth reports errors at runtime. I leave it as documentation
+# Custom messages handler. 
+
+They are not needed because the core of vapoursynth reports errors at runtime. I leave it as documentation
 
 	# Custom control obligatory parameters. If we define optional parameters (clip_1, clip_2) 
 	if clip_1 == None:
