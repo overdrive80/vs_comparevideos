@@ -5,7 +5,7 @@ def comparevideos(clip_1, clip_2, show: bool = True):
 	
 	# If is False return clip 2
 	if show == False:
-		return clip_2
+		return clip_2.set_output()
 
 	# Parameters are not None but check type vs.VideoNode
 	if not isinstance(clip_1, vs.VideoNode):
