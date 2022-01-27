@@ -1,19 +1,31 @@
 # What does? 
 
-  Simple function for interleaving two videos
+  Simple function for interleaving two videos. The main use is to compare a loaded video and the same edited one to be able to contrast the "before and after".
 
 # Use
+  
+  Clip1 and Clips2 must have same format (framerate, framecount, dimensions). 
 
-  comparevideos(clip1: vs.VideoNode=None, clip2: vs.VideoNode=None, show: bool = True)
+  ```python
+  comparevideos(clip1, clip2)
+  ```
+  
+  For default, bool parameter is True. Header definition:
+  
+  comparevideos(clip1: vs.VideoNode, clip2: vs.VideoNode, show: bool = True)
 
 # Return value
 
-  vs.VideoNode object
+  vs.VideoNode (object)
+  
+  Return VideoNode.set_output()
+  
+  Therefore, there is no need to add a call to clip.set_output() after calling the function  
   
 # Custom messages handler. 
 
 They are not needed because the core of vapoursynth reports errors at runtime. I leave it as documentation
-
+```python
 	# Custom control obligatory parameters. If we define optional parameters (clip_1, clip_2) 
 	if clip_1 == None:
 		raise ValueError("The parameter 'clip_1' is mandatory.")
@@ -33,4 +45,5 @@ They are not needed because the core of vapoursynth reports errors at runtime. I
 	# Check framerate
 	if not clip_1.fps.numerator == clip_2.fps.numerator or not clip_1.fps.denominator == clip_2.fps.denominator:
 		raise ValueError("The clips framerate's must be the same.")
+		```
 
