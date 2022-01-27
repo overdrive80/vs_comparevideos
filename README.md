@@ -9,7 +9,7 @@
   ``` python
   from vscomparevideos import comparevideos
   
-  comparevideos(clip1, clip2)
+  comparevideos(clip1, clip2).set_output()
   ```
   
 # Definition
