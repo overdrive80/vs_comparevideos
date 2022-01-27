@@ -1,4 +1,4 @@
-# vs_comparevideos
+# Function comparevideos(clip1: vs.VideoNode=None, clip2: vs.VideoNode=None, show: bool = True)
 Simple function for interleaving two videos
 
 # Use
