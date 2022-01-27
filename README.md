@@ -45,5 +45,5 @@ if not clip_1.height == clip_2.height or not clip_1.width == clip_2.width:
 # Check framerate
 if not clip_1.fps.numerator == clip_2.fps.numerator or not clip_1.fps.denominator == clip_2.fps.denominator:
 	raise ValueError("The clips framerate's must be the same.")
-		```
+```
 
