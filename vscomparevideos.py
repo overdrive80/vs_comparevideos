@@ -1,18 +1,19 @@
 import vapoursynth as vs
+from vapoursynth import VideoNode
 core = vs.core
 
-def comparevideos(clip_1, clip_2, show: bool = True):
-	
+def comparevideos(clip_1: VideoNode, clip_2: VideoNode, show: bool = True):
+    
 	# If is False return clip 2
 	if show == False:
 		return clip_2
-
+	
 	# Parameters are not None but check type vs.VideoNode
 	if not isinstance(clip_1, vs.VideoNode):
 		raise ValueError("The parameter 'clip_1' is not a clip")
 	if not isinstance(clip_2, vs.VideoNode):
 		raise ValueError("The parameter 'clip_2' is not a clip")
-
+	
 	# If both parameters are clips
 	try:
 		clip_1 = core.sub.Subtitle(clip_1, "Clip 1")
