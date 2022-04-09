@@ -17,13 +17,15 @@
   For default, bool parameter is True. Header definition:
   
   ``` python
-  comparevideos(clip1: VideoNode, clip2: VideoNode, show: bool = True)
+  comparevideos(clip1: VideoNode, clip2: VideoNode, clip_name1 = None, clip_name2 = None, show: bool = True)
   ```
 
 # Parameters
 
   * clip1: expect object type VideoNode
   * clip2: expect object type VideoNode
+  * clip_name1: expect name for clip1
+  * clip_name2: expect name for clip2
   * show: boolean parameter for showing comparison
 
 # Return value
